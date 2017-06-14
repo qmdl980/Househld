@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public void Deposit(View v){
         EditText deposit_amount = (EditText) findViewById(R.id.deposit_amount);
         EditText get_money = (EditText) findViewById(R.id.get_money);
-        init = get_money.toString();
+        init = get_money.getText().toString();
         int amount = Integer.parseInt(deposit_amount.getText().toString());
         balance += amount;
         TextView Balance = (TextView) findViewById(R.id.balance);
@@ -35,12 +35,16 @@ public class MainActivity extends AppCompatActivity {
     public void Debit(View v){
         EditText debit_amount = (EditText) findViewById(R.id.debit_amount);
         EditText use_money = (EditText) findViewById(R.id.use_money);
-        init = use_money.toString();
+        init = use_money.getText().toString();
         int amount = Integer.parseInt(debit_amount.getText().toString());
         balance -= amount;
         TextView Balance = (TextView) findViewById(R.id.balance);
         TextView Record = (TextView) findViewById(R.id.init);
         Balance.setText(Integer.toString(balance));
         Record.setText(init);
+    }
+    public void onClickAccountSet(View v){
+        Intent intent_01 = new Intent(getApplicationContext(),AccountActivity.class);
+        startActivity(intent_01);
     }
 }
