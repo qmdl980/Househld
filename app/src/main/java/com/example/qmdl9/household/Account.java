@@ -31,8 +31,11 @@ public class Account implements BankSystem {
             balance -= amount;
         }
     }
-    public double getBalance() {
+    public int getBalance() {
         return balance;
+    }
+    public void setBalance(int amount){
+        balance = amount;
     }
     @Override
     public String toString(){
