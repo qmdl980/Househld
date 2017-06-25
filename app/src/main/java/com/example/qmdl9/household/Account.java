@@ -36,6 +36,6 @@ public class Account implements BankSystem {
     }
     @Override
     public String toString(){
-        return(bankName + " " + accountNumber + " " + Integer.toString(balance));
+        return(bankName + " " + accountNumber + " " + Integer.toString(balance)+ "원\n");
     }
 }

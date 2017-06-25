@@ -53,22 +53,20 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="124dp"
+        android:layout_width="0dp"
         android:layout_height="43dp"
-        android:layout_marginEnd="12dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="12dp"
         android:layout_marginStart="16dp"
         android:text="balance:"
+        android:textColor="@android:color/black"
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/balance"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/balance"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_editor_absoluteY="42dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+        tools:layout_constraintRight_creator="1" />
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
@@ -162,5 +160,19 @@
         app:layout_constraintTop_toBottomOf="@+id/debit_amount"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view record"
+        app:layout_constraintRight_toLeftOf="@+id/button"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/use_money"
+        android:onClick="viewRecord"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="6dp" />
 
 </android.support.constraint.ConstraintLayout>

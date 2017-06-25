@@ -11,11 +11,11 @@ public class Cash implements BankSystem {
         balance = 0;
     }
 
-    public void debit(int amount){
+    public void deposit(int amount){
         balance += amount;
     }
 
-    public void deposit(int amount) {
+    public void debit(int amount) {
         if (balance >= amount) {
             balance -= amount;
         }

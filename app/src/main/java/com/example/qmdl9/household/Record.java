@@ -16,6 +16,6 @@ public class Record {
     }
     @Override
     public String toString(){
-        return(kind +" " + where + " " + amount + "\n");
+        return(kind +"    " + where + "    " + amount + "\n");
     }
 }

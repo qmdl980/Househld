@@ -21,8 +21,4 @@ public class RecordActivity extends AppCompatActivity {
         Record.setText(record);
     }
 
-    public void backHome(View v){
-        Intent intent_01 = new Intent(getApplicationContext(),MainActivity.class);
-        startActivity(intent_01);
-    }
 }

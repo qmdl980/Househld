@@ -9,7 +9,8 @@ import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
     private int balance;
-    ArrayList<Record> records = new ArrayList<Record>();
+    static ArrayList<Record> records = new ArrayList<Record>();
+    static ArrayList<Account> accounts = new ArrayList<Account>();
     private Cash cash = new Cash();
 
     @Override
@@ -40,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClickAccountSet(View v){
         Intent intent_01 = new Intent(getApplicationContext(),AccountActivity.class);
+        startActivity(intent_01);
+    }
+    public void viewRecord(View v){
+        Intent intent_01 = new Intent(getApplicationContext(),RecordActivity.class);
         startActivity(intent_01);
     }
 }

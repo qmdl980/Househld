@@ -4,74 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.qmdl9.household.AccountActivity">
+    tools:context="com.example.qmdl9.household.AccountActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="114dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="9dp"
         android:text="AccountList"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/holo_blue_bright"
         android:textSize="20dp"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button4"
-        android:layout_marginEnd="15dp"
-        app:layout_constraintRight_toRightOf="@+id/button5"
-        android:layout_marginTop="6dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="6dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button4"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="15dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="109dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:onClick="backHome"
-        android:text="Home"
-        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginLeft="8dp" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="131dp"
-        android:layout_height="48dp"
+        android:layout_width="127dp"
+        android:layout_height="37dp"
         android:text="add ACCount"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="14dp"
         android:onClick="addAccount"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp" />
 
     <ScrollView
-        android:layout_width="332dp"
-        android:layout_height="376dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="127dp">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/scrollView3"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/AccountView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize = "18dp"
-                android:text="AccountView" />
+                android:text="AccountView"
+                android:textSize="18dp" />
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
